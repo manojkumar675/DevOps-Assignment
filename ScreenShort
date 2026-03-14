@@ -1,0 +1,18 @@
+AWS Deployment (EC2 + Docker Compose) — ap-south-1 (Mumbai)
+
+Deployed on AWS EC2 t3.small instance running Ubuntu 24.04. Frontend (Next.js) and Backend (FastAPI) containerized using 
+Docker Compose. Nginx configured as reverse proxy on port 80. Region selected: ap-south-1 (Mumbai) for India-first latency
+optimization.
+
+
+Azure Deployment (Container Apps) — Central India
+
+Deployed on Azure Container Apps using a serverless container architecture. Docker images pushed to Azure Container Registry 
+(ACR). Frontend and Backend running as separate Container Apps with auto-scaling (min 1, max 3 replicas). 
+Region selected: Central India for consistency with AWS India region strategy.
+
+
+Backend Connected — Both Clouds
+
+Screenshot confirms successful frontend-to-backend integration on both AWS and Azure.
+Backend health endpoint returning {"status": "healthy"} and message endpoint returning successful integration response.
